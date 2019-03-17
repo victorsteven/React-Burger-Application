@@ -1,10 +1,14 @@
 import React from 'react';
 import Aux from './../../hoc/Aux'
 
+const layoutStyles = {
+ marginTop: '16px',
+}
+
 const layout = (props) => (
  <Aux>
-   <div>Toolbar, SideDrawer, BackDrop</div>
-   <main>
+   <div className="Content">Toolbar, SideDrawer, BackDrop</div>
+   <main style={layoutStyles}> 
     {props.children}
    </main>
  </Aux>
